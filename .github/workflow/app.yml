@@ -1,9 +1,10 @@
-name: Uptime Checker
+name: Uptime Checker on Push
 
-# Menjalankan workflow secara otomatis berdasarkan jadwal (cron job)
+# Workflow akan berjalan setiap kali ada push ke branch tertentu
 on:
-  schedule:
-    - cron: "*/5 * * * *" # Setiap 5 menit
+  push:
+    branches:
+      - main # Ganti dengan nama branch yang sesuai jika berbeda
   workflow_dispatch: # Memungkinkan menjalankan workflow secara manual melalui GitHub UI
 
 jobs:
@@ -11,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository Anda
+      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Setup Python di runner
+      # Step 2: Setup Python
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
