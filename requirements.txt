@@ -2,4 +2,6 @@ requests
 schedule
 python-dotenv
 yagmail
-
+MIMEText
+MIMEMultipart
+smtplib
