@@ -2,4 +2,3 @@ requests
 schedule
 python-dotenv
 yagmail
-smtplib
