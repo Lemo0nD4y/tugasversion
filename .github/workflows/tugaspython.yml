@@ -50,7 +50,7 @@ jobs:
       # Step 7: Simpan Docker image ke file tar
       - name: Save Docker image as tar
         run: |
-          docker save uptime-checker -o uptime-checker.tar
+          docker save lemonday356/uptime-checker -o uptime-checker.tar
       
       # Step 8: Upload Docker image as Artifact
       - name: Upload Docker Image as Artifact
