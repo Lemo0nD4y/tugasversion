@@ -9,7 +9,7 @@ EMAIL = os.getenv("EMAIL")
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 ALERT_RECIPIENT = os.getenv("ALERT_RECIPIENT")
 
-websites = ["https://www.google.com", "https://anu123.com"]
+websites = ["https://www.google.com", "https://presensi-sib.seal.or.id"]
 
 def send_email(subject, body):
     try:
