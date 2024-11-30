@@ -47,10 +47,10 @@ jobs:
           push: true
           tags: lemonday356/uptime-checker:latest
 
-            # Step 7: Simpan artefak ke GitHub
+            # Step 7: Simpan file log sebagai artefak
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: uptime-checker-logs
-          path: logs/
+          name: uptime-checker-log
+          path: uptime_checker_output.log
 
